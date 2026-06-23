@@ -7,7 +7,7 @@
  * Standalone mode: if Anna Runtime is unavailable, runs with sample data.
  */
 
-const TOOL_ID = "tool-CHANGEME-coherence-engine-CHANGEME";
+const TOOL_ID = "tool-analyshd_1031-cognitive-mirror-2uxy74cx";
 
 const ARCHETYPE_DATA = {
   'Hero':      { icon: '⚔', desc: 'Peak coherence. All planes aligned. Execute your hardest work.' },

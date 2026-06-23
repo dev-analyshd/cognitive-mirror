@@ -1,5 +1,5 @@
 {
-  "tool_id": "tool-CHANGEME-coherence-engine-CHANGEME",
+  "tool_id": "tool-analyshd_1031-cognitive-mirror-2uxy74cx",
   "type": "python",
   "enabled": true,
   "entry_point": "coherence_engine.py",

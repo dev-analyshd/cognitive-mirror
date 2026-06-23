@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tool-CHANGEME-coherence-engine-CHANGEME"
+name = "tool-analyshd_1031-cognitive-mirror-2uxy74cx"
 version = "1.0.0"
 description = "5-plane cognitive coherence engine for Cognitive Mirror Anna App"
 readme = "README.md"
@@ -25,7 +25,7 @@ classifiers = [
 dependencies = []
 
 [project.scripts]
-tool-CHANGEME-coherence-engine-CHANGEME = "coherence_engine:main"
+tool-analyshd_1031-cognitive-mirror-2uxy74cx = "coherence_engine:main"
 
 [project.urls]
 Homepage = "https://github.com/dev-analyshd/cognitive-mirror"

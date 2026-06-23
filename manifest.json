@@ -11,7 +11,7 @@
   ],
   "required_executas": [
     {
-      "tool_id": "tool-CHANGEME-coherence-engine-CHANGEME",
+      "tool_id": "tool-analyshd_1031-cognitive-mirror-2uxy74cx",
       "min_version": "1.0.0"
     },
     {
@@ -48,7 +48,7 @@
     ],
     "host_api": {
       "tools": [
-        "required:tool-CHANGEME-coherence-engine-CHANGEME"
+        "required:tool-analyshd_1031-cognitive-mirror-2uxy74cx"
       ],
       "chat": [
         "write_message"
