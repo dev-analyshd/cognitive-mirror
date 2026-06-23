@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Mirror</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="mirror-header">
+      <div class="logo">
+        <svg viewBox="0 0 40 40" width="32" height="32">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FF9E6C"/>
+              <stop offset="1" stop-color="#B388FF"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 8 Q 24 16 32 20 Q 24 24 20 32 Q 16 24 8 20 Q 16 16 20 8 Z" fill="url(#logoGrad)" opacity="0.9"/>
+        </svg>
+        <span class="logo-text">Cognitive Mirror</span>
+      </div>
+      <div class="status-pill" id="statusPill">
+        <span class="status-dot" id="statusDot"></span>
+        <span class="status-text" id="statusText">Initializing...</span>
+      </div>
+    </header>
+
+    <section class="gate-section" id="gateSection">
+      <div class="gate-display">
+        <div class="gate-badge computing" id="gateBadge">
+          <span class="gate-icon" id="gateIcon">◉</span>
+          <span class="gate-label" id="gateLabel">COMPUTING</span>
+        </div>
+        <div class="gate-reason" id="gateReason">Analyzing your cognitive state...</div>
+      </div>
+      <div class="gate-metrics">
+        <div class="metric">
+          <span class="metric-label">Ψ (Coherence)</span>
+          <span class="metric-value" id="psiValue">—</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Θ (Threshold)</span>
+          <span class="metric-value" id="thetaValue">—</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Δ (Deficit)</span>
+          <span class="metric-value" id="deltaValue">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="archetype-section">
+      <div class="archetype-card" id="archetypeCard">
+        <div class="archetype-icon" id="archetypeIcon">✦</div>
+        <div class="archetype-info">
+          <div class="archetype-name" id="archetypeName">—</div>
+          <div class="archetype-desc" id="archetypeDesc">Computing archetype...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="charts-section">
+      <div class="chart-container">
+        <h3>Coherence History (30 Sessions)</h3>
+        <canvas id="coherenceChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>5-Plane Breakdown</h3>
+        <canvas id="planesChart"></canvas>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h3>Entropy Features (F1–F9)</h3>
+      <div class="features-grid" id="featuresGrid"></div>
+    </section>
+
+    <section class="moat-section">
+      <h3>Cognitive Moat (Λ)</h3>
+      <div class="moat-bar">
+        <div class="moat-fill" id="moatFill" style="width: 0%"></div>
+      </div>
+      <div class="moat-stats" id="moatStats">
+        <span>Days: <b id="moatDays">0</b></span>
+        <span>Accuracy: <b id="moatAccuracy">0%</b></span>
+        <span>Checks: <b id="moatChecks">0</b></span>
+      </div>
+    </section>
+
+    <section class="actions-section">
+      <button class="action-btn primary" id="refreshBtn" onclick="refreshAnalysis()">
+        ↻ Refresh Analysis
+      </button>
+      <button class="action-btn secondary" id="calibrateBtn" onclick="calibrateMoat()">
+        ✓ I Acted / I Rested (Calibrate Moat)
+      </button>
+      <button class="action-btn secondary" id="sampleBtn" onclick="loadSampleData()">
+        Load Sample Data
+      </button>
+    </section>
+
+    <section class="silence-panel" id="silencePanel" style="display: none;">
+      <h4>Structured Silence Signal</h4>
+      <pre id="silenceJson"></pre>
+    </section>
+
+    <footer class="mirror-footer">
+      <span>Powered by 5-plane coherence mathematics</span>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B1D27"/>
+      <stop offset="1" stop-color="#12141C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF9E6C"/>
+      <stop offset="0.5" stop-color="#B388FF"/>
+      <stop offset="1" stop-color="#82B1FF"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="48" fill="url(#bg)" stroke="rgba(255,158,108,0.2)" stroke-width="2"/>
+
+  <g transform="translate(128, 128)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.6"/>
+    <circle cx="0" cy="0" r="72" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.3"/>
+
+    <path d="M0 -60 Q 15 -15 60 0 Q 15 15 0 60 Q -15 15 -60 0 Q -15 -15 0 -60 Z"
+          fill="url(#accent)" opacity="0.9"/>
+
+    <ellipse cx="-15" cy="-20" rx="20" ry="12" fill="white" opacity="0.25" transform="rotate(-30)"/>
+
+    <circle cx="0" cy="-50" r="5" fill="#FF9E6C"/>
+    <circle cx="47" cy="-15" r="5" fill="#B388FF"/>
+    <circle cx="29" cy="40" r="5" fill="#82B1FF"/>
+    <circle cx="-29" cy="40" r="5" fill="#7FD49C"/>
+    <circle cx="-47" cy="-15" r="5" fill="#FFD166"/>
+  </g>
+
+  <text x="128" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace"
+        font-size="11" fill="#a6a8b5" letter-spacing="0.15em">COGNITIVE MIRROR</text>
+</svg>

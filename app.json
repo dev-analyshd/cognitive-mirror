@@ -1,0 +1,10 @@
+{
+  "slug": "cognitive-mirror",
+  "name": "Cognitive Mirror",
+  "category": "productivity",
+  "tagline": "Know when to think. Know when to stop.",
+  "description": "Cognitive Mirror turns your conversation history into a living behavioral coherence map. Using mathematically-rigorous 5-plane coherence scoring derived from behavioral oracle research, it computes your real-time cognitive state and tells you when to act and when to rest. The mirror doesn't judge — it computes. Every session compounds your cognitive moat.",
+  "homepage_url": "https://github.com/dev-analyshd/cognitive-mirror",
+  "repository_url": "https://github.com/dev-analyshd/cognitive-mirror",
+  "pricing_model": "free"
+}

@@ -1,0 +1,7 @@
+{
+  "tool_id": "tool-CHANGEME-coherence-engine-CHANGEME",
+  "type": "python",
+  "enabled": true,
+  "entry_point": "coherence_engine.py",
+  "description": "5-plane cognitive coherence engine using Shannon entropy and behavioral oracle mathematics. Computes Psi(t) from conversation message streams."
+}

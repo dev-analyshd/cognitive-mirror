@@ -1,0 +1,16 @@
+{
+  "name": "cognitive-mirror",
+  "version": "1.0.0",
+  "description": "Cognitive Mirror — Anna AI-Native App. Know when to think. Know when to stop.",
+  "private": true,
+  "scripts": {
+    "dev": "anna-app dev",
+    "validate": "anna-app validate --strict",
+    "test": "python tests/test_coherence_engine.py",
+    "fixture:verify": "anna-app fixture verify",
+    "fixture:summarize": "anna-app fixture summarize"
+  },
+  "devDependencies": {
+    "@anna-ai/cli": "latest"
+  }
+}

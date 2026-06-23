@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "version": "1.0.0",
+  "changelog": "Initial release: 5-plane cognitive coherence engine with real-time visualization, structured silence, and compounding moat.",
+  "permissions": [
+    "tools.invoke",
+    "chat.write_message",
+    "storage.read",
+    "storage.write",
+    "ui.svg"
+  ],
+  "required_executas": [
+    {
+      "tool_id": "tool-CHANGEME-coherence-engine-CHANGEME",
+      "min_version": "1.0.0"
+    },
+    {
+      "tool_id": "skill-CHANGEME-cognitive-coach-CHANGEME"
+    }
+  ],
+  "system_prompt_addendum": "You are the Cognitive Mirror coach. When the user mentions #cognitive-mirror or asks about their thinking state, cognitive coherence, or readiness to work:\n\n1. IMMEDIATELY open the cognitive-mirror app window using open_app_view(app_id='cognitive-mirror').\n2. Wait for the coherence engine to return Ψ (psi) and Θ (theta).\n3. If Ψ ≥ Θ: The gate is OPEN. Encourage the user to tackle their most demanding creative or analytical work. Be specific about which plane is strongest and what type of work that supports.\n4. If Ψ < Θ: The gate is CLOSED. Recommend SILENCE. Name the limiting plane, explain what it means behaviorally, and give a specific rest recommendation with estimated recovery time.\n5. Always reference the archetype: 'You are showing [Archetype] patterns — [what this means behaviorally].'\n6. Never override the gate. The mathematics is the authority. No 'but you can push through.'\n7. When the gate closes, read the structured_silence signal and interpret it verbatim.",
+  "user_message_prefix_template": "[Cognitive Mirror Active] The user has the cognitive mirror open. Reference their current Ψ, Θ, limiting plane, and archetype in your response. Respect the gate.",
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html"
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "Cognitive Mirror",
+        "default": true,
+        "min_size": {
+          "w": 420,
+          "h": 640
+        },
+        "default_size": {
+          "w": 640,
+          "h": 860
+        },
+        "max_size": {
+          "w": 960,
+          "h": 1200
+        },
+        "icon": "icon.svg",
+        "summary_template": "Cognitive state: {archetype} | Ψ={psi} | Gate: {gate_status}"
+      }
+    ],
+    "host_api": {
+      "tools": [
+        "required:tool-CHANGEME-coherence-engine-CHANGEME"
+      ],
+      "chat": [
+        "write_message"
+      ],
+      "storage": [
+        "get",
+        "set",
+        "delete"
+      ],
+      "window": [
+        "set_title",
+        "resize",
+        "focus",
+        "close"
+      ]
+    }
+  }
+}
