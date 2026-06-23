@@ -9,6 +9,8 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-82B1FF?style=flat)](https://python.org)
 [![DoraHacks](https://img.shields.io/badge/DoraHacks-Hackathon-7FD49C?style=flat)](https://dorahacks.io/hackathon/2204)
 
+**[▶ Watch Demo (YouTube)](https://youtube.com/shorts/QzZE4mM0fVM?si=xqbNwz99vKoyedZr)** · **[Live Preview](https://8be0f529-a30a-48de-805b-46e4ca1cc0b6-00-3m51hd3mpdedr.picard.replit.dev/mirror)**
+
 ---
 
 ## What It Does
